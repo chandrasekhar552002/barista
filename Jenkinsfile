@@ -1,13 +1,6 @@
 pipeline{
     agent any
     stages{
-        stage('cloning the git'){
-            steps{
-                sh 'rm -rf *'
-                sh 'git clone https://github.com/chandrasekhar552002/barista.git'
-                sh 'cd barista'
-            }
-        }
         stage('creating Images'){
             steps{
                 script{

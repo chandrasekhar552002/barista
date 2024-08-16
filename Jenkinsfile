@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage('cloning the git'){
-            step{
+            steps{
                 sh 'git clone https://github.com/chandrasekhar552002/barista.git'
             }
         }

@@ -9,7 +9,7 @@ pipeline{
             sh docker build -t website .
         }
         stage('running container'){
-            sh docker run -d website
+            sh docker run -itd -p 80:80 website
         }
     }
 }
